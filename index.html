@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ember Starter Kit</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/libs/jquery-1.9.1.js"></script>
+  <script src="js/libs/handlebars-1.0.0-rc.3.js"></script>
+  <script src="js/libs/ember-1.0.0-rc.2.js"></script>
+  <script src="js/libs/ember-data.js"></script>
+  <script src="js/libs/moment.js"></script>
+  <script src="js/libs/local_storage_adapter.js"></script>
+  <script src="js/libs/showdown.js"></script>
+  <script src="js/app.js"></script>
+
+</head>
+
+<body>
+
+  <script type="text/x-handlebars">
+    <h1 class='bluggr__title'>Bluggr</h1>
+
+    {{outlet}}
+  </script>
+
+
+
+  <script type="text/x-handlebars" data-template-name='posts'>
+    <!-- Toolbar -->
+    <div class='toolbar'>
+      <button {{action createPost}}>New Post</button>
+    </div>
+    <!-- The blog list template -->
+    {{#if model}}
+    <ul class='bluggr__list'>
+      {{#each model}}
+          <li>
+            {{#linkTo 'edit' this}}
+              <big>{{title}}</big><br/>
+              <small>Edited {{date modified}}</small>
+            {{/linkTo}}
+          </li>
+      {{/each}} 
+    </ul>
+    {{else}}
+    Add a new post to get started.
+    {{/if}}
+  </script>
+  
+
+
+  <script type="text/x-handlebars" data-template-name='edit'>
+    <div class='toolbar'>
+      {{#linkTo 'posts' class='button'}}
+      Done
+      {{/linkTo}}
+
+      <span {{bindAttr class='isSaved:saved:unsaved'}}>✔ Saved</span>
+
+      <button {{action deletePost}} class='pull-right'>Delete this post</button>
+
+    </div>
+
+    <!-- The editor interface -->
+    <section>
+      <div class='section-wrap split50'>
+        <span class='title'>Edit</span>
+
+        {{view Bluggr.editTitleView valueBinding='title' class='editor--field'}}
+
+        {{view Bluggr.editContentView valueBinding='postContent' class='editor'}}
+
+      </div>
+      <div class='section-wrap split50'>
+        <span class='title'>Preview</span>
+        <div class='preview'>
+          {{markdown postContent}}
+        </div>
+      </div>
+    </section>
+  </script>
+
+
+
+</body>
+
+</html>
