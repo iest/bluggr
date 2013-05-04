@@ -34,7 +34,7 @@
   <script type="text/x-handlebars" data-template-name='posts'>
     <!-- Toolbar -->
     <div class='toolbar'>
-      <button class=' positive' {{action createPost}}><i class='icon-plus'> </i>New Post</button>
+      <button class=' positive' {{action createPost}}><i class='icon-plus-3'> </i>New Post</button>
     </div>
     <!-- The blog list template -->
     {{#if model}}
@@ -68,10 +68,10 @@
 
     <!-- The editor interface -->
     <section>
-      {{view Bluggr.editTitleView valueBinding='title' class='editor--field editor--title'}}
+      {{view Bluggr.editTitleView valueBinding='title' class='editor--field editor--title' placeholder='Add a post title here'}}
       <div class='section-wrap split50'>
 
-        {{view Bluggr.editContentView valueBinding='postContent' class='editor'}}
+        {{view Bluggr.editContentView valueBinding='postContent' class='editor' placeholder='Add some markdown content here'}}
 
       </div>
       <div class='section-wrap split50'>

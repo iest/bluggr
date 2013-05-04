@@ -28,8 +28,8 @@ Bluggr.PostsRoute = Ember.Route.extend({
 Bluggr.PostsController = Ember.ArrayController.extend({
     createPost: function(){
         var newPost = Bluggr.Post.createRecord({
-            title: 'Blog Post title',
-            postContent: 'Blog content',
+            title: '',
+            postContent: '',
             modified: new Date()
         });
 
