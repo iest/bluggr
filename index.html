@@ -5,10 +5,14 @@
 <title>Bluggr</title>
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/entypo.css">
+  <link rel="stylesheet" type="text/css" href="css/ember-animated-outlet.css">
 
-  <script src="js/libs/jquery-1.9.1.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="js/libs/jquery-2.0.0.min.js"></script>
   <script src="js/libs/handlebars-1.0.0-rc.3.js"></script>
-  <script src="js/libs/ember-1.0.0-rc.2.js"></script>
+  <script src="js/libs/ember-1.0.0-rc.3.js"></script>
   <script src="js/libs/ember-data.js"></script>
   <script src="js/libs/moment.js"></script>
   <script src="js/libs/local_storage_adapter.js"></script>
@@ -30,7 +34,7 @@
   <script type="text/x-handlebars" data-template-name='posts'>
     <!-- Toolbar -->
     <div class='toolbar'>
-      <button {{action createPost}}>New Post</button>
+      <button class=' positive' {{action createPost}}><i class='icon-plus'> </i>New Post</button>
     </div>
     <!-- The blog list template -->
     {{#if model}}
@@ -42,39 +46,35 @@
               <small>Edited {{date modified}}</small>
             {{/linkTo}}
           </li>
-      {{/each}} 
+      {{/each}}
     </ul>
     {{else}}
-    Add a new post to get started.
+    <span class='margins'>To get started, add a new post.</span>
     {{/if}}
   </script>
-  
+
 
 
   <script type="text/x-handlebars" data-template-name='edit'>
     <div class='toolbar'>
-      {{#linkTo 'posts' class='button'}}
-      Done
+      {{#linkTo 'posts' class='button pull-left'}}
+      <i class='icon-checkmark'> </i> Done
       {{/linkTo}}
 
-      <span {{bindAttr class='isSaved:saved:unsaved'}}>✔ Saved</span>
-
-      <button {{action deletePost}} class='pull-right'>Delete this post</button>
+      <button {{action deletePost}} class='pull-right negative'>
+      <i class='icon-cross'> </i>Delete this post</button>
 
     </div>
 
     <!-- The editor interface -->
     <section>
+      {{view Bluggr.editTitleView valueBinding='title' class='editor--field editor--title'}}
       <div class='section-wrap split50'>
-        <span class='title'>Edit</span>
-
-        {{view Bluggr.editTitleView valueBinding='title' class='editor--field'}}
 
         {{view Bluggr.editContentView valueBinding='postContent' class='editor'}}
 
       </div>
       <div class='section-wrap split50'>
-        <span class='title'>Preview</span>
         <div class='preview'>
           {{markdown postContent}}
         </div>

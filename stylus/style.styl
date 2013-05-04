@@ -76,6 +76,11 @@ $column = 100%/18
 // STYLES BEGIN!
 
 
+.margins
+    margin 0.5em $column
+
+.pull-left
+    float left
 .pull-right
     float right
 
@@ -83,51 +88,96 @@ $column = 100%/18
 html
 body
     font-family 'Avenir Next'
-    background-color rgba(38,41,44,1)
-    color rgba(246,246,246,1)
-    margin 1em $column
+    background-color #fff
+    color #2A3D51
+
+
+i
+    position relative
+    top -0.1em
+    font-size 1.3em
+    vertical-align middle
+
 
 .button
 button
     display inline-block
     border none
     text-decoration none
-    background-color rgba(75,79,83,1)
-    color rgba(246,246,246,1)
+    background-color #1ABC9C
+    color #ECF0F1
     font-family "Avenir Next Condensed"
     font-size 0.9em
-    padding 0.25em 0.5em
+    padding 0.25em 0.75em
     margin 0
     text-transform uppercase
     line-height 2em
     cursor pointer
     vertical-align middle
+    border-radius 5em
+    i
+        transition()
+        color #16A085
+
+    &:hover
+        i
+            color #ECF0F1
     &:active
-        color rgba(white, 0.8)
-        background-color rgba(64,117,171,1)
+        transform(scale(0.95))
+
+.positive
+    background-color #2ECC71
+    i
+        color #27AE60
+.negative
+    background-color #E74C3C
+    i
+        color #C0392B
 
 .toolbar
-    margin 1em 0
+    cf()
+    text-align center
+    margin 1em $column
 
 .bluggr__title
     font-weight 300
     font-size 2em
     text-transform capitalize
-    margin-bottom 1em
+    margin 1em $column
 
 .bluggr__list
     font-size 1.1em
+    margin 0 $column
     margin-top 1em
     list-style none
     li
         cursor pointer
         color #999
         margin-bottom 0.5em
-        background-color rgba(75,79,83,0.25)
+        background-color #ECF0F1
         border 1px solid transparent
-        transition();
+        transition()
+        overflow hidden
+        height 3.5em
+        &:before
+            transition()
+            display block
+            position relative
+            background-color #1ABC9C
+            font-size 1.5em
+            color #16A085
+            float left
+            font-family 'entypo'
+            content "\e005"
+            width 1.5em
+            height (3.5/1.5em)
+            text-align center
+            margin-left -1.5em
+            margin-right 0.25em
+            padding-top 0.6em
         &:hover
-            border 1px solid rgba(98,144,169,0.25)
+            &:before
+                margin-left 0
         &:active
             opacity 0.5
         a
@@ -136,20 +186,23 @@ button
             padding 0.5em
             color white
             big
-                color rgba(246,132,55,1)
+                color #34495E
             small
-                color rgba(114,170,202,1)
+                color #BDC3C7
                 font-size 80%
 
 
 .section-wrap
     .title
+        margin 1.5em 0 1em
         display block
         color rgba(75,79,83,1)
 
 .split50
-    width 50%
-    float left
+    @media(min-width:40em)
+        width 50%
+        float left
+        // padding 0 $column
 
 .preview
     padding 0.25em
@@ -157,46 +210,60 @@ button
 .editor
 .editor--field
     padding 0.25em
-    font-family 'Cousine'
-    font-size 1.2em
-    min-height 10em
-    width 90%
-    max-width 90%
+    font-family 'Cousine', monospace
+    font-size 1em
+    min-height 20em
+    width 100%
+    max-width 100%
     border none
-    background-color rgba(73,76,80,1)
-    color rgba(184,217,103,1)
+    border-radius 0
+    background-color #ECF0F1
+    color #333
+    transition()
+    &:focus
+        background-color #fff
+        outline 0
 .editor--field
     min-height 1em
-    width 90%
+    width 100%
+    bottom 0
+.editor
+    height 100%
+    padding 1em
+    font-size 90%
+    border-right 1px solid #95A5A6
 
-
-.unsaved
-    opacity 0
-.saved
-    color rgba(184,217,103,1)
+.editor--title
+    text-align center
 
 
 .preview
+    padding 1em
     h1
     h2
     h3
+    h4
+    h5
+    h6
         margin 0.5em 0
         font-weight 400
 
     h1
         font-size 2.5em
         font-weight 200
-        color rgba(246,132,55,1)
+        color #2C3E50
     h2
         font-size 1.5em
-        text-transform uppercase
-        color rgba(107,167,202,1)
+        color #2C3E50
         font-weight 200
     h3
         font-size 1.15em
-        color rgba(107,167,202,1)
+        color #34495E
+        text-transform uppercase
 
     p
         margin 0.25em 0
         margin-bottom 0.75em
-        color rgba(111,170,202,1)
+        color #34495E
+    a
+        color #34495E

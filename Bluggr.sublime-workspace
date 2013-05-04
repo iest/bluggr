@@ -43,7 +43,7 @@
 			"file": "stylus/style.styl",
 			"settings":
 			{
-				"buffer_size": 4335,
+				"buffer_size": 4503,
 				"line_ending": "Unix"
 			}
 		},
@@ -51,7 +51,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2084,
+				"buffer_size": 2176,
 				"line_ending": "Unix"
 			}
 		},
@@ -59,15 +59,7 @@
 			"file": "js/app.js",
 			"settings":
 			{
-				"buffer_size": 2613,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/iest/Library/Mobile Documents/74ZAFF46HB~jp~informationarchitects~Writer/Documents/Eysys Scratch.md",
-			"settings":
-			{
-				"buffer_size": 29242,
+				"buffer_size": 2612,
 				"line_ending": "Unix"
 			}
 		}
@@ -108,6 +100,8 @@
 	},
 	"file_history":
 	[
+		"/Users/iest/Dropbox/My Github repos/bluggr/js/libs/local_storage_adapter.js",
+		"/Users/iest/Library/Mobile Documents/74ZAFF46HB~jp~informationarchitects~Writer/Documents/Eysys Scratch.md",
 		"/Users/iest/Dropbox/Eysys/Stratum2.0/New Stratum site.md",
 		"/Users/iest/Desktop/todomvc/js/controllers/todo_controller.js",
 		"/Users/iest/Desktop/starter-kit-1.0.0-rc.2/js/libs/moment.js",
@@ -144,7 +138,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 91.0,
 		"where_history":
 		[
 			"*.js, *.jade"
@@ -155,6 +149,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"title",
+			"90",
 			"invoke",
 			"todo",
 			"Todo",
@@ -220,7 +216,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -228,15 +224,15 @@
 					"file": "stylus/style.styl",
 					"settings":
 					{
-						"buffer_size": 4335,
+						"buffer_size": 4503,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3825,
-								3825
+								3655,
+								3655
 							]
 						],
 						"settings":
@@ -334,7 +330,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2004.0,
+						"translation.y": 1644.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -344,15 +340,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 2084,
+						"buffer_size": 2176,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1763,
-								1763
+								1549,
+								1549
 							]
 						],
 						"settings":
@@ -450,25 +446,31 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 520.0,
+						"translation.y": 632.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
 					"buffer": 2,
 					"file": "js/app.js",
 					"settings":
 					{
-						"buffer_size": 2613,
+						"buffer_size": 2612,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								802,
-								802
+								1911,
+								1911
 							]
 						],
 						"settings":
@@ -566,123 +568,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 260.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/Users/iest/Library/Mobile Documents/74ZAFF46HB~jp~informationarchitects~Writer/Documents/Eysys Scratch.md",
-					"settings":
-					{
-						"buffer_size": 29242,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								29242
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_mark_style": "outline",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Markdown/Markdown.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 836.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -707,11 +593,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -731,6 +624,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"ada",
+				"bluggr/js/libs/local_storage_adapter.js"
+			],
 			[
 				"uti",
 				"stylus/util.styl"
@@ -809,7 +706,11 @@
 		[
 			[
 				"",
-				"/Users/iest/Dropbox/Eysys/ST3 projects/MySalaryChecker.sublime-project"
+				"/Users/iest/Dropbox/Eysys/ST3 projects/Holistic_Admin.sublime-project"
+			],
+			[
+				"Ins",
+				"/Users/iest/Desktop/Inspire_Website/Inspire_Website.sublime-project"
 			],
 			[
 				"hor",
@@ -821,7 +722,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 179.0,
 	"status_bar_visible": true
 }

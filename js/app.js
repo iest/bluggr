@@ -27,13 +27,15 @@ Bluggr.PostsRoute = Ember.Route.extend({
 
 Bluggr.PostsController = Ember.ArrayController.extend({
     createPost: function(){
-        Bluggr.Post.createRecord({
-            title: 'New Post Title',
-            postContent: '',
+        var newPost = Bluggr.Post.createRecord({
+            title: 'Blog Post title',
+            postContent: 'Blog content',
             modified: new Date()
         });
 
         this.get('store').commit();
+
+        this.transitionTo('edit', newPost);
     }
 });
 
@@ -60,7 +62,6 @@ Bluggr.EditController = Ember.ObjectController.extend({
 
         }
     }
-
 });
 
 Bluggr.editTitleView = Ember.TextField.extend({
@@ -103,7 +104,7 @@ Bluggr.Post = DS.Model.extend({
 });
 
 Bluggr.Store = DS.Store.extend({
-    revision: 11,
+    revision: 12,
     adapter: 'Bluggr.LSAdapter'
 });
 
