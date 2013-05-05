@@ -266,30 +266,6 @@ button:active {
   overflow: hidden;
   height: 3.5em;
 }
-.bluggr__list li:before {
-  -moz-transition: all 200ms ease;
-  -webkit-transition: all 200ms ease;
-  -o-transition: all 200ms ease;
-  -ms-transition: all 200ms ease;
-  transition: all 200ms ease;
-  display: block;
-  position: relative;
-  background-color: #1abc9c;
-  font-size: 1.5em;
-  color: #16a085;
-  float: left;
-  font-family: 'entypo';
-  content: "\e005";
-  width: 1.5em;
-  height: 2.3333333333333335em;
-  text-align: center;
-  margin-left: -1.5em;
-  margin-right: 0.25em;
-  padding-top: 0.6em;
-}
-.bluggr__list li:hover:before {
-  margin-left: 0;
-}
 .bluggr__list li:active {
   opacity: 0.5;
 }
@@ -305,6 +281,31 @@ button:active {
 .bluggr__list li a small {
   color: #bdc3c7;
   font-size: 80%;
+}
+.bluggr__list li a:before {
+  -moz-transition: all 200ms ease;
+  -webkit-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  transition: all 200ms ease;
+  display: block;
+  position: relative;
+  background-color: #1abc9c;
+  font-size: 1.5em;
+  color: #16a085;
+  float: left;
+  font-family: 'entypo';
+  content: "\e005";
+  width: 1.5em;
+  height: 1.3em;
+  padding-top: 0.3em;
+  text-align: center;
+  width: 0;
+  margin-right: 0.25em;
+  overflow: hidden;
+}
+.bluggr__list li a:hover:before {
+  width: 2em;
 }
 .section-wrap .title {
   margin: 1.5em 0 1em;
@@ -361,38 +362,50 @@ button:active {
 .editor--title {
   text-align: center;
 }
-.preview {
+.preview,
+.editor {
   padding: 1em;
 }
 .preview h1,
+.editor h1,
 .preview h2,
+.editor h2,
 .preview h3,
+.editor h3,
 .preview h4,
+.editor h4,
 .preview h5,
-.preview h6 {
+.editor h5,
+.preview h6,
+.editor h6 {
   margin: 0.5em 0;
   font-weight: 400;
 }
-.preview h1 {
+.preview h1,
+.editor h1 {
   font-size: 2.5em;
   font-weight: 200;
   color: #2c3e50;
 }
-.preview h2 {
+.preview h2,
+.editor h2 {
   font-size: 1.5em;
   color: #2c3e50;
   font-weight: 200;
 }
-.preview h3 {
+.preview h3,
+.editor h3 {
   font-size: 1.15em;
   color: #34495e;
   text-transform: uppercase;
 }
-.preview p {
+.preview p,
+.editor p {
   margin: 0.25em 0;
   margin-bottom: 0.75em;
   color: #34495e;
 }
-.preview a {
+.preview a,
+.editor a {
   color: #34495e;
 }

@@ -161,25 +161,6 @@ button
         transition()
         overflow hidden
         height 3.5em
-        &:before
-            transition()
-            display block
-            position relative
-            background-color #1ABC9C
-            font-size 1.5em
-            color #16A085
-            float left
-            font-family 'entypo'
-            content "\e005"
-            width 1.5em
-            height (3.5/1.5em)
-            text-align center
-            margin-left -1.5em
-            margin-right 0.25em
-            padding-top 0.6em
-        &:hover
-            &:before
-                margin-left 0
         &:active
             opacity 0.5
         a
@@ -192,6 +173,26 @@ button
             small
                 color #BDC3C7
                 font-size 80%
+            &:before
+                transition()
+                display block
+                position relative
+                background-color #1ABC9C
+                font-size 1.5em
+                color #16A085
+                float left
+                font-family 'entypo'
+                content "\e005"
+                width 1.5em
+                height 1.3em
+                padding-top 0.3em
+                text-align center
+                width 0
+                margin-right 0.25em
+                overflow hidden
+            &:hover
+                &:before
+                    width 2em
 
 
 .section-wrap
@@ -240,6 +241,7 @@ button
 
 
 .preview
+.editor
     padding 1em
     h1
     h2

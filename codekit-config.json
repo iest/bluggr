@@ -53,6 +53,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/css\/style.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/style.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/js\/libs\/ember-data.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -63,15 +72,6 @@
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/js\/libs\/ember-data-ck.js",
       "fileType" : 64
-    },
-    "\/css\/style.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/style.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/js\/libs\/moment.js" : {
       "ignoreWasSetByUser" : 0,
@@ -129,6 +129,15 @@
       "outputAbbreviatedPath" : "\/css\/html5-reset.css",
       "fileType" : 8,
       "debugStyle" : 0
+    },
+    "\/css\/ember-animated-outlet.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/ember-animated-outlet.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/stylus\/ember-animated-outlet.styl" : {
       "ignoreWasSetByUser" : 0,
